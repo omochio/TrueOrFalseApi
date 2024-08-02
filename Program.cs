@@ -10,7 +10,7 @@ app.Run();
 
 static async Task<IResult> GetHighscore()
 {
-    var resdir = Environment.GetEnvironmentVariable("RES_DIRE");
+    var resdir = Environment.GetEnvironmentVariable("RES_DIR");
     var highscorePath = resdir + "/highscore.txt";
 
     if (File.Exists(highscorePath))
@@ -26,7 +26,7 @@ static async Task<IResult> GetHighscore()
 
 static async Task<IResult> UpdateHighscore(Score score)
 {
-    var resdir = Environment.GetEnvironmentVariable("RES_DIRE");
+    var resdir = Environment.GetEnvironmentVariable("RES_DIR");
     var highscorePath = resdir + "/highscore.txt";
 
     if (File.Exists(highscorePath))
