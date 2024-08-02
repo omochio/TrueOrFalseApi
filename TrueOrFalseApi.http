@@ -1,0 +1,14 @@
+﻿@TrueOrFalseApi_HostAddress = https://localhost:7040
+
+
+GET {{TrueOrFalseApi_HostAddress}}/highscore
+
+###
+
+PUT {{TrueOrFalseApi_HostAddress}}/highscore
+Content-Type: application/json
+{
+  "score":100
+}
+
+###
